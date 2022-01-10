@@ -1,0 +1,1 @@
+{"name":"Local: Question3","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\Question3.cpp","tests":[{"id":1639491420595,"input":"4\n4 1\n13 21 2 22\n3 3\n6 9 6\n5 1\n8 23 21 5 3\n3 3\n23 14 5","output":"2\n0\n3\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\Question3.cpp","group":"local","local":true}

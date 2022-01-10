@@ -1,0 +1,1 @@
+{"name":"Local: FLOW006","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\FLOW006.cpp","tests":[{"id":1638377486624,"input":"3 \n12345\n31203\n2123","output":"15\n9\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\FLOW006.cpp","group":"local","local":true}
