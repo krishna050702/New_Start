@@ -1,0 +1,1 @@
+{"name":"Local: MAX_DIFF","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\dsa cwh\\MAX_DIFF.cpp","tests":[{"id":1648025641703,"input":"3\n3 1\n4 4\n2 3\n","output":"1\n4\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\dsa cwh\\MAX_DIFF.cpp","group":"local","local":true}

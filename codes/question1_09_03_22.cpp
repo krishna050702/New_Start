@@ -1,26 +1,27 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int t;
-    cin>>t;
-    for(int i=0;i<t;i++)
+    cin >> t;
+    for (int i = 0; i < t; i++)
     {
         int n;
-        cin>>n;
+        cin >> n;
         char str[n];
-        cin>>str;
-        int res=0,count=0;
-        for (int j = 0; j<n; j++)
+        cin >> str;
+        int res = 0, count = 0;
+        for (int j = 0; j < n; j++)
         {
-            if(j<n-1)
+            if (j < n - 1)
             {
-                if(str[j]==str[j+1])
+                if (str[j] == str[j + 1])
                 {
                     res++;
                     j++;
                 }
-                else{
+                else
+                {
                     res++;
                 }
             }
@@ -29,7 +30,7 @@ int main()
                 res++;
             }
         }
-        cout<<res<<endl;
+        cout << res << endl;
     }
     return 0;
 }
