@@ -1,0 +1,1 @@
+{"name":"Local: BUDGET","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\starter_33\\BUDGET.cpp","tests":[{"id":1649255877862,"input":"3\n1000 10\n250 50\n1500 50\n","output":"YES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\starter_33\\BUDGET.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CABS","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\starter_33\\CABS.cpp","tests":[{"id":1649255556764,"input":"3\n30 65\n42 42\n90 50\n","output":"FIRST\nANY\nSECOND\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\starter_33\\CABS.cpp","group":"local","local":true}
