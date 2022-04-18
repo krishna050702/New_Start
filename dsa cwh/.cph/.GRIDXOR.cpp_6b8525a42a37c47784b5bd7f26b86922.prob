@@ -1,0 +1,1 @@
+{"name":"Local: GRIDXOR","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\dsa cwh\\GRIDXOR.cpp","tests":[{"id":1642001337823,"input":"1\n3","output":"1 1 1\n1 1 1\n1 1 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\dsa cwh\\GRIDXOR.cpp","group":"local","local":true}

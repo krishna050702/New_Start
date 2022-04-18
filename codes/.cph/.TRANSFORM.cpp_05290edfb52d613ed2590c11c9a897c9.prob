@@ -1,0 +1,1 @@
+{"name":"Local: TRANSFORM","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\TRANSFORM.cpp","tests":[{"id":1650119895188,"input":"3\n2\n4\n12\n","output":"SMALL\nHUGE\nNORMAL\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\TRANSFORM.cpp","group":"local","local":true}

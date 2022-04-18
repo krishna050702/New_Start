@@ -1,85 +1,119 @@
-#include <pthread.h>
+// #include <iostream>
+// using namespace std;
+
+// void insertionsort(int A[], int n)
+// {
+//     int value,hole  ;
+//     for(int i=1; i<n; i++)
+//     {
+//         value = A[i];
+//         hole = i;
+
+//         while(hole > 0 && A[hole-1] > value)
+//         {
+//             A[hole] = A[hole-1];
+//             hole = hole -1;
+//         }
+//         A[hole] = value;
+//     }
+// }
+
+// void displayarray(int A[], int n)
+// {
+//     for(int i=0; i<n; i++)
+//         cout << A[i] << ";";
+//     cout << "\n";
+// }
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int A[n];
+
+//     for(int i=0; i<n; i++){
+//         cin >> A[i];
+//     }
+//     for(int i=0; i<n; i++){
+//         if(i > 0){
+//             insertionsort(A,i+1);
+//             displayarray(A, i+1);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdbool.h>
 
-#define MAXTHREADS 8
+#define MAX 7	//defining size of our array
 
-pthread_mutex_t mutex_sum = PTHREAD_MUTEX_INITIALIZER;
-int sum = 0;
-void *Addup(int Id)
-{
-    pthread_mutex_lock(&mutex_sum);
-    {
-        sum += Id;
-    }
-    pthread_mutex_unlock(&mutex_sum);
-    return 0;
+int intArray[MAX] = {4,6,3,2,1,9,7};
+
+void printline(int count) {
+  int i;
+
+  for(i = 0;i < count-1;i++) {
+     printf("=");
+  }
+
+  printf("=\n");
 }
 
-main(int argc, char *argv[])
-{
+void display() {
+  int i;
+  printf("[");
 
-    int ret_count;
-    pthread_t *threads;
-    pthread_attr_t pta;
-    int i, NumThreads;
-    if (argc != 2)
-    {
-        printf(" Missing Argument: Number of Threads.\n");
-        return 0;
-    }
+  // navigate through all items 
+  for(i = 0;i < MAX;i++) {
+     printf("%d ",intArray[i]);
+  }
 
-    NumThreads = abs(atoi(argv[1]));
-    if (NumThreads == 0)
-    {
-        printf("\nNumber of Threads are Assumed as 4");
-        NumThreads = 4;
-    }
-
-    if (NumThreads > MAXTHREADS)
-    {
-        printf("\n\t Error : Number of threads should be less than 8\n");
-        exit(-1);
-    }
-
-    printf("\n The Number of threads is %d.\n", NumThreads);
-
-    threads = (pthread_t *)malloc(sizeof(pthread_t) * NumThreads);
-    ret_count = pthread_attr_init(&pta);
-    if (ret_count)
-    {
-        printf("ERROR; return code from pthread_attr_init() is %d\n", ret_count);
-        exit(-1);
-    }
-
-    for (i = 0; i < NumThreads; i++)
-    {
-        ret_count = pthread_create(&threads[i], &pta, (void *(*)(void *))Addup, (void *)(i + 1));
-        if (ret_count)
-        {
-            printf("ERROR; return code from pthread_create() is %d\n", ret_count);
-            exit(-1);
-        }
-    }
-
-    for (i = 0; i < NumThreads; i++)
-    {
-       ret_count = pthread_join(threads[i], NULL);
-        if (ret_count)
-        {
-            printf("ERROR; return code from pthread_join() is %d\n", ret_count);
-            exit(-1);
-        }
-    }
-
-    ret_count = pthread_attr_destroy(&pta);
-    if (ret_count)
-    {
-        printf("ERROR; return code from pthread_attr_destroy() is %d\n", ret_count);
-        exit(-1);
-    }
-
-    printf("\n Number of threads: %d. Sum: %d.\n", NumThreads, sum);
-    return 0;
+  printf("]\n");
 }
 
+void insertionSort() {
+
+  int valueToInsert;
+  int holePosition;
+  int i;
+ 
+  // loop through all numbers 
+  for(i = 1; i < MAX; i++) { 
+
+     // select a value to be inserted. 
+     valueToInsert = intArray[i];
+
+     // select the hole position where number is to be inserted 
+     holePosition = i;
+
+     // check if previous no. is larger than value to be inserted 
+     while (holePosition > 0 && intArray[holePosition-1] > valueToInsert) {
+        intArray[holePosition] = intArray[holePosition-1];
+        holePosition--;
+        printf(" item moved : %d\n" , intArray[holePosition]);
+     }
+
+     if(holePosition != i) {
+        printf(" item inserted : %d, at position : %d\n" , valueToInsert,holePosition);
+        // insert the number at current hole
+        intArray[holePosition] = valueToInsert;
+     }
+
+     printf("Iteration %d#:",i);
+     display();
+
+  } 
+}
+
+int main() {
+  printf("Input Array: ");
+  display();
+  printline(50);
+  insertionSort();
+  printf("Output Array: ");
+  display();
+  printline(50);
+}

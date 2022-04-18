@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.main{
+  background-attachment: fixed;
+  width: auto;
+  height: 90vh;
+}
+
+.head{
+  position: absolute;
+  color: antiquewhite;
+  text-align: center;
+  font-family:cursive;
+  font-size: 35px;
+  top: 38vh;
+  left: 65vh;
+}
+
+.head1{
+  position: absolute;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-family:cursive;
+  font-size: 35px;
+  top: 47vh;
+  left: 50vh;
+}
+
+.products{
+  position: absolute;
+  top: 60vh;
+  
+}

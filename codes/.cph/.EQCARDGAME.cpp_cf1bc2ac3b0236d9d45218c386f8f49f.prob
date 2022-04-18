@@ -1,0 +1,1 @@
+{"name":"Local: EQCARDGAME","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\EQCARDGAME.cpp","tests":[{"id":1642606589589,"input":"4\n3\n50\n2\n14","output":"1\n2\n0\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\EQCARDGAME.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: LTIME","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\LTIME.cpp","tests":[{"id":1650119591082,"input":"3\n1\n7\n3","output":"YES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\LTIME.cpp","group":"local","local":true}
