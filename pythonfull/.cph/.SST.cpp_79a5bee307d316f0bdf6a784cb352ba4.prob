@@ -1,0 +1,1 @@
+{"name":"Local: SST","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\pythonfull\\SST.cpp","tests":[{"id":1650707526146,"input":"3\n100 200\n200 100\n200 500\n","output":"ANY\nFIRST\nSECOND\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\pythonfull\\SST.cpp","group":"local","local":true}
