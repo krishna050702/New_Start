@@ -1,0 +1,1 @@
+{"name":"Local: DARLIG","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\DARLIG.cpp","tests":[{"id":1650466170301,"input":"3\n4 0\n0 1\n3 1","output":"Off\nOn\nAmbiguous"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\codes\\DARLIG.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CHEAPFOOD","url":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\pythonfull\\CHEAPFOOD.py","tests":[{"id":1650707097314,"input":"3\n300\n1300\n1000\n","output":"100\n130\n100\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Desktop\\New_Start\\pythonfull\\CHEAPFOOD.py","group":"local","local":true}
